@@ -14,7 +14,7 @@ function UsersPage() {
   return (
     <div>
       <button onClick={getUsers}>get users</button>
-      {users.map(user => <User userInfo={user} />)}
+      {users.map(user => <User key={user.id} userInfo={user} />)}
     </div>
   )
 }
